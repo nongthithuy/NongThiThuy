@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<style>
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 200px;
+	border: 1px solid #f1f1f1;
+}
+ul.drop li, ul.drop li a {
+	border-bottom: 1px solid #fbfbfb;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 5px;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: darkblue;
+}
+ul.drop li:hover, ul.drop li a:hover {
+	display: block;
+	background: #999;
+	color: red;
+}
+ul.drop li > ul.drop {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	display: none;
+}
+ul.drop li:hover > ul.drop {
+	display: block;
+}
+</style>
+</head>
+<body>
+<ul class="drop">
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">NEWS</a>
+    <ul class="drop">
+      <li><a href="#">ITEM1</a></li>
+      <li><a href="#">ITEM2</a></li>
+      <li><a href="#">ITEM3</a></li>
+      <li><a href="#">ITEM4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">CONTACT</a></li>
+  <li><a href="#">ABOUT</a></li>
+</ul>
+</body>
+</html>
